@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+      div#wrapper {
+        width: 900px;
+        border: 1px solid red;
+        overflow: auto;
+        margin: 0 auto;
+      }
+      div#header {
+        width: 95%;
+        margin: 5px auto;
+        border: 1px solid;
+        text-align: center;
+      }
+      h1 {
+        padding: 10px;
+        background: green;
+        margin: 0;
+        color: white;
+      }
+      div#left {
+        width: 25%;
+        height: 150px;
+        background: lightgray;
+        float: left;
+        box-sizing: border-box;
+        padding-top: 25px;
+      }
+      div#content {
+        width: 95%;
+        margin: 0 auto;
+        overflow: auto;
+      }
+      div#right {
+        width: 75%;
+        height: 150px;
+        padding-left: 20px;
+        box-sizing: border-box;
+        background: lightblue;
+        float: left;
+      }
+      div#footer {
+        clear: both;
+        width: 95%;
+        margin: 5px auto;
+      }
+      #footer p {
+        text-align: center;
+        padding: 8px;
+        background: lightpink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header">
+        <h1>Hello Layouts</h1>
+      </div>
+      <div id="content">
+        <div id="left">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+            <li>Item 1</li>
+          </ul>
+        </div>
+        <div id="right">
+          <h2>Hello I am Heading 2</h2>
+          <p>
+            The K20 opens up new possibilities. The 48 MP AI Triple camera setup
+            lets you see things from a different perspective altogether. Be it
+            ultra-wides or telephoto shots, the K20 produces flawless images.
+            Powered by the Qualcomm Snapdragon 730 and a 4000 mAh battery, this
+            device finds a perfect balance between performance and power
+            efficiency. The Aura Prime design gives the device a unique look
+            while the Corning Gorilla Glass 5 on the front and back enhances the
+            overall user experience.
+          </p>
+        </div>
+      </div>
+      <div id="footer">
+        <p>I am Footer</p>
+      </div>
+    </div>
+  </body>
+</html>
