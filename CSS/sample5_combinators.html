@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      /* Select All Siblings */
+      /* div ~ p {
+        color: red;
+      } */
+
+      /* Select Only Immediete Children Paragraphs */
+      div > p {
+        color: red;
+      }
+
+      /* Select Next One Sibling */
+      /* div + p {
+        color: red;
+      } */
+
+      /* select all Child Paragraph */
+      /* div p {
+        color: red;
+      } */
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Hello I am inside Paragraph 1</p>
+      <p>Hello I am inside Paragraph 2</p>
+      <h2>
+        <p>I am Also Para Inside Heading</p>
+      </h2>
+    </div>
+    <p>Hello I am Outside Paragrap 1</p>
+    <p>Hello I am inside Paragraph 2</p>
+  </body>
+</html>
