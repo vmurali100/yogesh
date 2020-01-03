@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .success {
+        color: green;
+      }
+      .danger {
+        color: red;
+      }
+      /* img {
+        width: 500px;
+      } */
+    </style>
+    <script>
+      function changeText() {
+        var myText = document.getElementById("Heading").innerHTML;
+
+        if (myText == "Hello I am Heading") {
+          document.getElementById("Heading").innerHTML =
+            "Welcome to Javascript";
+          document.getElementById("Heading").setAttribute("class", "danger");
+          document.getElementById("Heading").style.background = "lightgrey";
+          var imge = document.createElement("img");
+          imge.setAttribute(
+            "src",
+            "http://constructs.stampede-design.com/wp-content/uploads/2017/01/javascriptlogo-2.jpg"
+          );
+          imge.style.width = "500px";
+          document.body.appendChild(imge);
+        } else {
+          document.getElementById("Heading").innerHTML = "Hello I am Heading";
+          document.getElementById("Heading").setAttribute("class", "success");
+          document.getElementById("Heading").style.background = "";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="changeText()">Change Heading</button>
+    <h2 id="Heading" class="success">Hello I am Heading</h2>
+  </body>
+</html>
