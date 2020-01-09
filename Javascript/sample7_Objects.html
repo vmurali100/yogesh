@@ -18,16 +18,20 @@
         state: "CT",
         zip: 14828
       };
+      person.fullName = "Murali Krishna";
+      person["email"] = "vmurali@gmail.com";
       //   document.getElementById("demo").innerHTML =
       //     "Person First Name : " +
       //     person.fname +
       //     " <br> Person Last Name : " +
       //     person.lname;
+      delete person.zip;
 
       var results = "";
       for (a in person) {
         console.log(person[a]);
-        results = results + person[a] + "<br>";
+        // results = results + person[a] + "<br>";
+        results += person[a] + "<br>";
       }
 
       document.getElementById("demo").innerHTML = results;

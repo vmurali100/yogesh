@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <script>
+      var users = ["Yogesh", "Murali", "Krishna", "Sudhakar", "Yogesh"];
+      console.log(users.length);
+
+      //   users.push("Ravi"); //Push method will add a value to the last of the Array
+      //   users.unshift("VMR"); //Unshift method will add a value to the Begining of the Array
+      //   users.splice(2, 0, "Sipra"); //Splice method will add a value at specified Index
+
+      //   users.pop(); //POP method will remove a value at the end of the array
+      //   users.shift(); //Shift method will remove a value at the Beginning of the array
+      //   users.splice(0); //SPlice will remove the value at the specified position
+
+      //   users.sort();//Will sort the values
+
+      users.reverse();
+      var results = "";
+
+      //   for (i = 0; i < users.length; i++) {
+      //     results += users[i] + "<br>";
+      //   }
+
+      //   users.map(function(user) {
+      //     console.log(user);
+      //     results += user + "<br>";
+      //   });
+
+      users.forEach(function(user) {
+        results += user + "<br>";
+      });
+
+      //Will be usefull to check one instance
+      var check = users.find(function(user) {
+        return user == "Yogesh";
+      });
+
+      //This will be usefull to check multiple Instances
+      //   var check = users.filter(function(user) {
+      //     return user == "Yogesh";
+      //   });
+      console.log(check);
+      document.getElementById("demo").innerHTML = results;
+    </script>
+  </body>
+</html>
