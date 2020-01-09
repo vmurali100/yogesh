@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="demo"></div>
+    <script>
+      var person = {
+        fname: "Shelton",
+        lname: "Whatley",
+        tel: "(802)598-6719",
+        address: "5452 Amet Ct",
+        city: "Newington",
+        state: "CT",
+        zip: 14828
+      };
+      //   document.getElementById("demo").innerHTML =
+      //     "Person First Name : " +
+      //     person.fname +
+      //     " <br> Person Last Name : " +
+      //     person.lname;
+
+      var results = "";
+      for (a in person) {
+        console.log(person[a]);
+        results = results + person[a] + "<br>";
+      }
+
+      document.getElementById("demo").innerHTML = results;
+    </script>
+  </body>
+</html>
