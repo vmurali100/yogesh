@@ -4,11 +4,22 @@
     <title>Document</title>
   </head>
   <body>
-    <button onclick="showName()">Show</button>
-
+    <button onClick="showName()">Show</button>
+    <div id="demo"></div>
     <script>
+      var person = {
+        fname: "Murali",
+        lname: "Krihsna",
+        email: "vmurali@gmail.com"
+      };
+
+      // Will show the Person Object details when we click on the button
       function showName() {
-        alert("Welcome to Events");
+        var results = "";
+        for (a in person) {
+          results += person[a] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = results;
       }
     </script>
   </body>

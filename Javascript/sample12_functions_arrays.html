@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="showAllUsers()">Show Users</button><br />
+    <!-- <button onclick="deleteFirstUser()">Delete First</button><br />
+    <button onclick="delteLastUser()">Delete Last</button><br />
+    <button onclick="deleteMiddleUser()">Delete Middle</button> -->
+    <button onclick="addFirstUser()">Add User at Begining</button>
+    <button onclick="addUserLast()">Add User at Last</button>
+
+    <button onclick="addUserMiddle()">Add User at Middle</button>
+    <button onclick="reverseUsers()">Revers</button>
+
+    <button onclick="sortUsers()">Sort Users</button>
+    <button onclick="showMurali()">Find</button>
+    <div id="demo"></div>
+    <script>
+      var users = ["Murali", "Krishna", "Yogesh", "Ram", "Ravi", "Murali"];
+
+      function showAllUsers() {
+        var results = "";
+        for (i = 0; i < users.length; i++) {
+          results += users[i] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = results;
+      }
+
+      function deleteFirstUser() {
+        users.shift();
+        showAllUsers();
+      }
+
+      function delteLastUser() {
+        users.pop();
+        showAllUsers();
+      }
+
+      function deleteMiddleUser() {
+        users.splice(2, 1);
+        showAllUsers();
+      }
+
+      function addFirstUser() {
+        users.unshift("RaMKS");
+        showAllUsers();
+      }
+
+      function addUserLast() {
+        users.push("VML");
+        showAllUsers();
+      }
+
+      function addUserMiddle() {
+        users.splice(2, 0, "Sipra");
+        showAllUsers();
+      }
+
+      function reverseUsers() {
+        users.reverse();
+        showAllUsers();
+      }
+
+      function sortUsers() {
+        users.sort();
+        showAllUsers();
+      }
+
+      function showMurali() {
+        users = users.filter(function(user) {
+          return user == "Murali";
+        });
+        showAllUsers();
+      }
+    </script>
+  </body>
+</html>
