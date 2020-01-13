@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Hello I am inside Div</div>
+    <div>hello i am also Div in this Document</div>
+
+    <script>
+      //Manipulating Elements without any Selector
+      document.getElementsByTagName("div")[0].innerHTML =
+        "Hello I am going to Change You";
+
+      //QuerySelector method will select the first matched element
+      document.querySelector("div").innerHTML = "I am going to Change";
+
+      //QueryselectorAll will select all the matched elements
+      document.querySelectorAll("div");
+    </script>
+  </body>
+</html>
