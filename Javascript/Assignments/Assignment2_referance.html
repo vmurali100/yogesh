@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="myUsers"></ul>
+    <hr />
+    <div id="demo"></div>
+    <script>
+      var users = [
+        {
+          id: 2211,
+          email: "RKailin@malesuada.io",
+          username: "BHist",
+          password: "dXCY9"
+        },
+        {
+          id: 2212,
+          email: "BLeonard@vitae.org",
+          username: "MAnn",
+          password: "6tZme"
+        },
+        {
+          id: 2213,
+          email: "DHodgson@placerat.gov",
+          username: "ESilverio",
+          password: "w9Z82"
+        }
+      ];
+
+      users.map(function(user) {
+        var myLi = document.createElement("li"); // LI element Created Dynamically
+        myLi.innerHTML = user.username; // text Added to LI Element
+        document.getElementById("myUsers").appendChild(myLi); // LI element Added to UL Dynamically
+      });
+
+      //Adding An Event Handler Dynamically
+      document.getElementById("myUsers").onclick = function(event) {
+        console.log(event.target.innerHTML);
+        var clickedUser = users.find(function(user) {
+          return user.username == event.target.innerHTML;
+        });
+        console.log(clickedUser);
+        var results = "";
+        for (a in clickedUser) {
+          results += clickedUser[a] + "<br>";
+        }
+        document.getElementById("demo").innerHTML = results;
+      };
+    </script>
+  </body>
+</html>

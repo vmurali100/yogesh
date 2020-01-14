@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="changeHeadingColor()" id="myBtn">
+      Change Heading Color
+    </button>
+
+    <h3 id="myHeading">Hello World</h3>
+
+    <script>
+      function changeHeadingColor() {
+        document.getElementById("myHeading").style.color = "red";
+        document.getElementById("myHeading").style.background = "";
+        document
+          .getElementById("myBtn")
+          .removeEventListener("mouseover", changeBackground);
+      }
+
+      document
+        .getElementById("myBtn")
+        .addEventListener("mouseover", changeBackground);
+      function changeBackground() {
+        document.getElementById("myHeading").style.background = "grey";
+      }
+    </script>
+  </body>
+</html>

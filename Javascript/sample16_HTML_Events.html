@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <select name="" id="myCity" onchange="getCity()">
+      <option value="Bangalore">Bangalore</option>
+      <option value="Kochin">Kochin</option>
+      <option value="Channai">Channai</option>
+      <option value="Hyderabad">Hyderabad</option>
+    </select>
+
+    <p>You Have Selected City : <span id="cityName"></span></p>
+
+    <script>
+      function getCity() {
+        //Get the Selected City
+        var selectedCity = document.getElementById("myCity").value;
+
+        // insert the Selected City Name
+        document.getElementById("cityName").innerHTML = selectedCity;
+      }
+    </script>
+  </body>
+</html>

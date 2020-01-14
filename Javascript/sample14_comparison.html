@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // variables Declared Out side the funtion are called Global Variable
+      var a = 10;
+      var b = 20;
+      var c;
+      function calculate() {
+        //   a,b,c arre local Variables to this Function
+        a = 10;
+        b = 20;
+        c = a + b;
+      }
+
+      calculate();
+
+      console.log(c);
+    </script>
+  </body>
+</html>
