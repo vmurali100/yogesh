@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var users = ["Yogesh", "Sipra", "Ram"];
+
+      function findRam() {
+        var check = false;
+        users.map(function(name) {
+          if (name == "Ram") {
+            check = true;
+          }
+        });
+        if (check) {
+          alert("Yes Ram is available");
+        } else {
+          alert("Ram is Not Available");
+        }
+      }
+
+      findRam();
+    </script>
+  </body>
+</html>

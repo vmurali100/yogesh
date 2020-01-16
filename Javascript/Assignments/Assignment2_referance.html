@@ -37,16 +37,18 @@
 
       //Adding An Event Handler Dynamically
       document.getElementById("myUsers").onclick = function(event) {
-        console.log(event.target.innerHTML);
-        var clickedUser = users.find(function(user) {
-          return user.username == event.target.innerHTML;
-        });
+        var clickedUser = event.target.innerHTML;
         console.log(clickedUser);
-        var results = "";
-        for (a in clickedUser) {
-          results += clickedUser[a] + "<br>";
-        }
-        document.getElementById("demo").innerHTML = results;
+        users.map(function(user) {
+          if (clickedUser == user.username) {
+            console.log(user);
+            var results = "";
+            for (a in user) {
+              results += user[a] + "<br>";
+            }
+            document.getElementById("demo").innerHTML = results;
+          }
+        });
       };
     </script>
   </body>
