@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="fname">First Name : </label>
+      <input type="text" id="fname" /> <br />
+      <label for="lname">Last Name : </label>
+      <input type="text" id="lname" />
+      <button onclick="getValues()" type="button">Get Values</button>
+    </form>
+
+    <script>
+      function getValues() {
+        // var firstName = document.getElementById("fname").value;
+        // var lastName = document.getElementById("lname").value;
+
+        var person = {
+          fname: document.getElementById("fname").value,
+          lname: document.getElementById("lname").value
+        };
+        console.log(person);
+      }
+    </script>
+  </body>
+</html>
