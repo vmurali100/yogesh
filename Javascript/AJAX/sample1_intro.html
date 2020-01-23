@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="getData()">Get Data</button>
+
+    <script>
+      function getData() {
+        //   Step 1:
+        var getInfo = new XMLHttpRequest();
+
+        // Step 2:
+        getInfo.onreadystatechange = function() {
+          if (getInfo.status == 200 && getInfo.readyState == 4) {
+            console.log(getInfo.response);
+            console.log(JSON.parse(getInfo.response));
+          }
+        };
+
+        // getInfo.open(
+        //   "GET",
+        //   "http://www.filltext.com/?rows=3&fname={firstName}&lname={lastName}&tel={phone|format}&address={streetAddress}&city={city}&state={usState|abbr}&zip={zip}&pretty=true"
+        // );
+
+        getInfo.open("GET", "http://dummy.restapiexample.com/api/v1/employees");
+        getInfo.send();
+      }
+    </script>
+  </body>
+</html>
