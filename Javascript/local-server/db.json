@@ -1,34 +1,24 @@
 {
   "users": [
     {
-      "fname": "Murali",
-      "lname": "Krishna",
-      "id": 1
-    },
-    {
       "fname": "Ram",
       "lname": "Krishna",
+      "subjects": [
+        "HTML",
+        "CSS"
+      ],
+      "gender": "Male",
       "id": 2
     },
     {
-      "fname": "Kumar",
-      "lname": "Krishna",
-      "id": 3
-    },
-    {
       "fname": "Murali",
-      "lname": "R",
-      "id": 4
-    },
-    {
-      "fname": "Muralik",
-      "lname": "ram",
-      "id": 5
-    },
-    {
-      "fname": "Sipra",
-      "lname": "K",
-      "id": 6
+      "lname": "Krishna CK",
+      "subjects": [
+        "JS",
+        "Angular"
+      ],
+      "gender": "Male",
+      "id": 3
     }
   ]
 }
