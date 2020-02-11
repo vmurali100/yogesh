@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" />
+      <br />
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" />
+      <button onclick="getUser()" type="button">Get User</button>
+    </form>
+
+    <script>
+      function getUser() {
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+
+        if (fname == "" || lname == "") {
+          alert("Please enter Some Value");
+        } else {
+          console.log(fname);
+          console.log(lname);
+        }
+      }
+    </script>
+  </body>
+</html>

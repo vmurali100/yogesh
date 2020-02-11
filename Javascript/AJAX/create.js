@@ -4,6 +4,8 @@ function addUser() {
     lname: document.getElementById("lname").value
   };
   user.id = null;
+
+  //user which is getting passed in the function is called Argument or parameter
   postUserToServer(user);
 }
 
