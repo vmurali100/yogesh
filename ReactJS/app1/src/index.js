@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import Murali from "./Murali";
+import Sipra from "./Sipra";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<Sipra />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
