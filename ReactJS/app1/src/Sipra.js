@@ -7,11 +7,24 @@ export default function Sipra() {
     fname: "Murali",
     lname: "Krishna"
   };
+
+  //Es5 function
+  //  const addValue = function (){}
+
+  //Es6 Arrow function
+  const addValue = () => {
+    console.log("Hello World from MyFunc");
+  };
   let users = ["Ram", "Ravi", "sam"];
   return (
     <div>
       <h2>Hello From Sipra</h2>
-      <Yogesh msg={message} myObj={person} myUsers={users}></Yogesh>
+      <Yogesh
+        msg={message}
+        myObj={person}
+        myUsers={users}
+        myFunc={addValue}
+      ></Yogesh>
     </div>
   );
 }

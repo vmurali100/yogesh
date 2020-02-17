@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
-import Murali from "./Murali";
+// import App from "./App";
+// import Murali from "./Murali";
 import Sipra from "./Sipra";
 
 ReactDOM.render(<Sipra />, document.getElementById("root"));
