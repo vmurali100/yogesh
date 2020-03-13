@@ -8,6 +8,10 @@ export default class NewChildComp extends Component {
     console.log(this.props);
   }
 
+  sayHello = () => {
+    return <h1>I am from SayHello Function</h1>;
+  };
+
   render() {
     return (
       <div>
@@ -21,6 +25,7 @@ export default class NewChildComp extends Component {
             return <li key={user}>{user}</li>;
           })}
         </ul>
+        {this.sayHello()}
       </div>
     );
   }
