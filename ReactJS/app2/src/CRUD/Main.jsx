@@ -10,7 +10,7 @@ export default class Main extends Component {
         {
           id: 7523,
           email: "GDonaldson@aenean.io",
-          username: "SJosey",
+          username: "Murali",
           password: "PMnv3",
         },
         {
